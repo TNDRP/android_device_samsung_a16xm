@@ -1,2 +1,10 @@
-# android_device_samsung_a16xm
-Galaxy A16 Mediatek | WIP
+# Android device tree for samsung SM-A166P (a16xm)
+
+```
+#
+# Copyright (C) 2024 The Android Open Source Project
+# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
