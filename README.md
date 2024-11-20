@@ -1,10 +1,22 @@
 # Android device tree for samsung SM-A166P (a16xm)
 
+# How-to compile it:
+
+- twrp-11 Manifest
 ```
-#
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
+    repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
 ```
+ - Sync
+```
+    repo sync
+```
+ - Clone TheNoobDevs-Staging twrp tree
+```
+    git clone https://github.com/TND-STAGING/android_device_samsung_a16xm.git -b android-14 device/samsung/a16xm
+```
+ - Build
+```
+    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a16xm-eng; mka recoveryimage
+```
+## Multidisabler
+once in twrp go to advanced, terminal and type "multidisabler" to stop restoration of stock recovery
